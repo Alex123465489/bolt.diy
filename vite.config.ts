@@ -13,6 +13,10 @@ dotenv.config();
 
 export default defineConfig((config) => {
   return {
+    server: {
+  host: true,
+  allowedHosts: ['web-boltdiy-app.n6kxfc.easypanel.host'],
+},
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
